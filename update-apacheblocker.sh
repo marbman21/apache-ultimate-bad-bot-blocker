@@ -35,7 +35,7 @@ APACHE_VERSION='2.4'
 #Directory where bad bot configs are located.
 APACHE_CONF='/etc/apache2/custom.d'
 #location of globalblacklist
-BLACKLIST_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
+BLACKLIST_URL="https://raw.githubusercontent.com/marbman21/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
 #Address to send update notifications
 EMAIL='email@example.com'
 #Make backup of globalblacklist.conf when updating true or false.
