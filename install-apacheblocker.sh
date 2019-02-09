@@ -46,7 +46,7 @@ APACHE_VERSION='2.4'
 #Generally /etc/apache2 or /etc/httpd depending on OS
 APACHE_CONF='/etc/apache2'
 #location of Apache blocker files
-BLOCKER_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d"
+BLOCKER_URL="https://raw.githubusercontent.com/marbman21/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d"
 
 sudo mkdir -p "${APACHE_CONF}/custom.d"
 sudo wget ${BLOCKER_URL}/globalblacklist.conf -O "${APACHE_CONF}/custom.d/globalblacklist.conf"
