@@ -32,7 +32,7 @@
 ### READ: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md
 
 # Save this file as ~/install-apacheblocker.sh
-# sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/install-apacheblocker.sh -O ~/install-apacheblocker.sh
+# sudo wget https://raw.githubusercontent.com/marbman21/apache-ultimate-bad-bot-blocker/master/install-apacheblocker.sh -O ~/install-apacheblocker.sh
 # Make it Executable chmod +x ~/install-apacheblocker.sh
 # Run it from the command line using sudo ~/install-apacheblocker.sh
 
@@ -55,6 +55,9 @@ sudo wget ${BLOCKER_URL}/whitelist-domains.conf -O "${APACHE_CONF}/custom.d/whit
 sudo wget ${BLOCKER_URL}/blacklist-ips.conf -O "${APACHE_CONF}/custom.d/blacklist-ips.conf"
 sudo wget ${BLOCKER_URL}/bad-referrer-words.conf -O "${APACHE_CONF}/custom.d/bad-referrer-words.conf"
 sudo wget ${BLOCKER_URL}/blacklist-user-agents.conf -O "${APACHE_CONF}/custom.d/blacklist-user-agents.conf"
+sudo wget https://raw.githubusercontent.com/marbman21/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O "/etc/cron.daily/update-apacheblocker.sh"
+sudo chmod +x /etc/cron.daily/update-apacheblocker.sh
+
 echo "Manually edit vhost to include globalblacklist.conf"
 exit 0
 
